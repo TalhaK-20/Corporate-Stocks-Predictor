@@ -77,18 +77,18 @@ print(f'Predicted Close Price for Next Day: {pred_close[0]}')
 model_dir = 'models'
 os.makedirs(model_dir, exist_ok=True)
 
-joblib.dump(open_price_column, os.path.join(model_dir, 'stock_price_open_model.pkl'))
-joblib.dump(high, os.path.join(model_dir, 'stock_price_high_model.pkl'))
-joblib.dump(low, os.path.join(model_dir, 'stock_price_low_model.pkl'))
-joblib.dump(close, os.path.join(model_dir, 'stock_price_close_model.pkl'))
+joblib.dump(open_price_column, os.path.join(model_dir, 'adani_stock_price_open_model.pkl'))
+joblib.dump(high, os.path.join(model_dir, 'adani_stock_price_high_model.pkl'))
+joblib.dump(low, os.path.join(model_dir, 'adani_stock_price_low_model.pkl'))
+joblib.dump(close, os.path.join(model_dir, 'adani_stock_price_close_model.pkl'))
 
 
 # ------------------------ Loading Models from Files ------------------------
 
-loaded_model_open = joblib.load(os.path.join(model_dir, 'stock_price_open_model.pkl'))
-loaded_model_high = joblib.load(os.path.join(model_dir, 'stock_price_high_model.pkl'))
-loaded_model_low = joblib.load(os.path.join(model_dir, 'stock_price_low_model.pkl'))
-loaded_model_close = joblib.load(os.path.join(model_dir, 'stock_price_close_model.pkl'))
+loaded_model_open = joblib.load(os.path.join(model_dir, 'adani_stock_price_open_model.pkl'))
+loaded_model_high = joblib.load(os.path.join(model_dir, 'adani_stock_price_high_model.pkl'))
+loaded_model_low = joblib.load(os.path.join(model_dir, 'adani_stock_price_low_model.pkl'))
+loaded_model_close = joblib.load(os.path.join(model_dir, 'adani_stock_price_close_model.pkl'))
 
 
 # ------------------------ New Predictions from Loaded Files ------------------------
